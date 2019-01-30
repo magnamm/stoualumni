@@ -130,11 +130,11 @@
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
             
                 <li class="col-xs-6 col-sm-4 col-md-3" 
-                    data-responsive="{{ file.path }}" 
-                    data-src="{{ file.path }}" 
+                    data-responsive="{{ file.path | absolute_url }}" 
+                    data-src="{{ file.path | absolute_url }}" 
                     data-sub-html="
                         <h4>{{ filename }}</h4>
-                        <p>...</p>" 
+                        <p></p>" 
                     data-pinterest-text="Pin it" 
                     data-tweet-text="share on twitter">
                     <a href="">
